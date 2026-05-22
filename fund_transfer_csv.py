@@ -58,7 +58,7 @@ def validate_transfer(data):
         return "Failed : Daily transfer limit exceeded"
 
     # Transaction count validation
-    if daily_transaction_count > 10:
+    if daily_transaction_count >= 10:
         return "Failed : Maximum 10 transactions allowed"
 
     # Beneficiary validation
